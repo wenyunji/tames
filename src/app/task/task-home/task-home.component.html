@@ -1,0 +1,24 @@
+<div class="task-lists">
+<app-task-list 
+*ngFor="let list of lists"
+ app-Drop
+ [app-Drag]="true"
+ [dragTag]="'task-item'"
+ [draggedClass]="'drag-start'"
+ [dragData]="item"
+class="list-content">
+ <app-task-header [header]="list.name"
+  (remindTask)='remianNewTask()' 
+  (copyTask)="remianCopyTask()"
+  (deleteDialog)="remianDeleteDialog()"
+  (amendDialog)="remianAmendDialog()"
+  ></app-task-header>
+ <app-task-item
+ *ngFor="let task of list.tasks" [item]="task" (itemClick)="remianItemTask(task)">
+ </app-task-item> 
+</app-task-list>
+</div>
+
+<button class="fab-button" md-fab type="button" (click)="openNewProjectDialog()">
+  <md-icon>add</md-icon>
+</button>

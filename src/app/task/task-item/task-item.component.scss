@@ -1,0 +1,46 @@
+md-icon.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    order: 3;
+}
+.container{
+    width: 100%;
+    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(0,0,0 ,0.1)
+}
+.content{
+    order: 1;
+    padding: 5px;
+    font-size: 12px;
+}
+:host{
+    width: 100%;
+}
+.buttom-bar{
+    margin-bottom: 2px;
+    margin-top: 3px;;
+    font-size: 12px;
+    width: 100%;
+    order: 1
+}
+.completed-stats{
+    order: -1
+}
+.date-item{
+    background: #ff4f3f;
+    color: #ffffff;
+}
+.priority-normal{
+    border-left: 3px solid #a6a6a6
+}.priority-important{
+    border-left: 3px solid #8B05FF;
+}
+.priority-emergenrcy{
+    border-left: 3px solid #ff4f3f;
+}
+.drag-start{
+    opacity: 0.5;
+    border: 2px dashed red;
+}

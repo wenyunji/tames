@@ -1,0 +1,19 @@
+.card{
+    flex: 0 0 320px;
+    margin: 10px;
+    height: 340px;
+    }
+.container{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+ }
+
+.fab-button{
+    position: fixed;
+    bottom: 100px;
+    right: 34px;
+    background: #FF0033;
+    color: #ffffff;
+    z-index: 998;
+}
